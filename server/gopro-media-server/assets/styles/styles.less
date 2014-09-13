@@ -1,0 +1,49 @@
+// constants
+@base03:    #002b36;
+@base02:    #073642;
+@base01:    #586e75;
+@base00:    #657b83;
+@base0:     #839496;
+@base1:     #93a1a1;
+@base2:     #eee8d5;
+@base3:     #fdf6e3;
+@yellow:    #b58900;
+@orange:    #cb4b16;
+@red:       #dc322f;
+@magenta:   #d33682;
+@violet:    #6c71c4;
+@blue:      #268bd2;
+@cyan:      #2aa198;
+@green:     #859900;
+
+@background-color: @base3;
+@fontstack: "ff-din-web-pro-1","ff-din-web-pro-2",sans-serif;
+
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+
+html *, body {
+    font-family: @fontstack;
+    background-color: @background-color;
+}
+
+.top {
+    .jumbotron {
+        background-color: @background-color;
+        h1 {
+            border-bottom: solid 1px @base0;
+            font-weight: bold;
+            color: @yellow;
+            text-shadow: 0px 1px 0px white;
+        }
+    }
+    p {
+        color: @base0;
+    }
+    
+}
+
+nav.navbar-default {
+    margin-bottom: 0px;
+    border: none;
+    background-color: @base1;
+}

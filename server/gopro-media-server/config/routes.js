@@ -34,7 +34,7 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
-  }
+  },
 
   /***************************************************************************
   *                                                                          *
@@ -45,5 +45,12 @@ module.exports.routes = {
   * for configuration options and examples.                                  *
   *                                                                          *
   ***************************************************************************/
-
+  '/movies': {
+    controller: 'MoviesController',
+    action: 'index'
+  },
+  '/movies/scan/:YYYY/:MM/:DD/:HH/:mm/:SS': {
+    controller: 'MoviesController',
+    action: 'scan'
+  }
 };

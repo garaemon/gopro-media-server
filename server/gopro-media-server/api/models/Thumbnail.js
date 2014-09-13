@@ -1,11 +1,12 @@
 /**
-* Movie.js
+* Thumbnail.js
 *
 * @description :: TODO: You might write a short summary of how this model works and what it represents here.
 * @docs        :: http://sailsjs.org/#!documentation/models
 */
 
 module.exports = {
+
   attributes: {
     id: {
       type: 'integer',
@@ -13,17 +14,12 @@ module.exports = {
       primaryKey: true,
       unique: true
     },
-    name: {
+    file_path: {
       type: 'string'
     },
-    description: {
-      type: 'string'
-    },
-    movie_path: {
-      type: 'string'
-    },
-    thumbnail_id: {
-      type: 'integer'
+    state: {
+      type: 'string',
+      required: true
     }
   }
 };
